@@ -1,12 +1,12 @@
 <template>
   <div>
- <Banner />
+ <banner />
     <section class="section">
       <div class="container">
         <h1 class="title">Top Video Games</h1>
         <div class="columns">
           <div class="column is-one-quarter">
-          <GameCard />
+          <game-card />
           </div>
         </div>
       </div>
@@ -16,7 +16,7 @@
         <h1 class="title">Featured Articles</h1>
         <div class="columns">
           <div class="column is-one-quarter">
-         <ArticleCard />
+         <article-card />
           </div>
         </div>
       </div>
