@@ -48,7 +48,7 @@
         <div class="navbar-item">
           <div class="buttons">
             <!-- If Authenticated -->
-            <template v-if="true">
+            <template v-if="false">
               <figure class="image avatar is-48x48 m-r-sm">
                 <img class="is-rounded" src="https://upload.wikimedia.org/wikipedia/commons/6/67/User_Avatar.png">
               </figure>
@@ -66,10 +66,10 @@
               </a>
             </template>
             <template v-else>
-              <nuxt-link to="#" class="button is-primary">
+              <nuxt-link to="/register" class="button is-primary">
                 Sign up
               </nuxt-link>
-              <nuxt-link to="#" class="button is-light">
+              <nuxt-link to="/login" class="button is-light">
                 Log in
               </nuxt-link>
             </template>
