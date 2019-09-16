@@ -2,28 +2,25 @@
   <div class="card">
     <div class="card-image">
       <figure class="image is-4by2">
-        <img
-          src="https://images.unsplash.com/photo-1547658718-1cdaa0852790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          alt="Placeholder image"
-        />
+        <img :src="game.image" alt="Placeholder image" />
       </figure>
     </div>
     <div class="card-content">
       <div class="media">
         <div class="media-content">
-          <p class="title is-4">Some Super Title</p>
+          <p class="title is-4">{{game.title}}</p>
           <p class="subtitle is-6">
-            <i>Some Super Subtitle</i>
+            <i>{{game.interestedUser.name}}</i>
           </p>
         </div>
       </div>
       <div class="content">
-        Some Description
+        {{game.subtitle}}
         <br />
       </div>
       <div class="price-box">
-        <span class="price">150$</span>
-        <span class="disc-price">9.99$</span>
+        <span class="price">{{game.price}}$</span>
+        <span class="disc-price">{{game.discountedPrice}}$</span>
       </div>
     </div>
     <footer class="card-footer">
@@ -32,6 +29,17 @@
     </footer>
   </div>
 </template>
+<!-- getting props of game -->
+<script>
+export default {
+  props: {
+    game: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
 <style lang="scss">
 .card-image:hover {
   cursor: pointer;

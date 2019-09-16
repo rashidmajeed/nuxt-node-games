@@ -82,7 +82,7 @@ module.exports = {
           "https://cdn.mos.cms.futurecdn.net/mm7CgtVmjgg4uQZb6GJyZg-650-80.jpg",
         description:
           "Soul Calibur 6 may have only just arrived on the scene, but it's already setting longtime fans alight with excitement. The definitive weapons-based fighter, the Soul Calibur series struggled to find its footing for awhile, but seems to have come home with SC6, which echoes the beloved Soul Calibur 2. The new Reversal Edge mechanic gives combatants more options, while returning features like Critical Edge provide flashy, powerful moves that let you unleash devastation on your foes.",
-        audexp: [
+        expaud: [
           {
             value: "This game is target for the all age group"
           },
