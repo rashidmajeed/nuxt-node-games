@@ -30,6 +30,7 @@ module.exports = {
   */
   plugins: [
     {src: '~/plugins/vuelidate'},
+    {src: '~/plugins/toasted', ssr: false}
   ],
   /*
   ** Nuxt.js modules

@@ -81,10 +81,20 @@ export default {
       }
     }
   },
+  computed: {
+    isFormValid() {
+      return !this.$v.$invalid
+    }
+  },
   methods: {
     login() {
       //console.log(this.form)
             this.$v.form.$touch()
+if (this.isFormValid) {
+        this.$store.dispatch('auth/loginUser', this.form)
+          .then(() => this.$router.push('/'))
+          .catch(() => this.$toasted.error('Wrong email or password', {duration: 3000}))
+      }
 
     }
   }
